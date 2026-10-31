@@ -570,6 +570,22 @@
           "comment": null,
           "enumItems": [],
           "mappedType": "datetime"
+        },
+        "balance_observed": {
+          "name": "balance_observed",
+          "type": "numeric(20,2)",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": true,
+          "unique": false,
+          "length": null,
+          "precision": 20,
+          "scale": 2,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "decimal"
         }
       },
       "name": "wager_transactions",

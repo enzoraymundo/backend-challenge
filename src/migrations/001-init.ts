@@ -1,4 +1,4 @@
-import { Migration } from '@mikro-orm/migrations';
+import { Migration } from '@mikro-orm/migrations'
 
 export class Migration001Init extends Migration {
   async up(): Promise<void> {
@@ -103,11 +103,11 @@ export class Migration001Init extends Migration {
   }
 
   async down(): Promise<void> {
-    this.addSql('DROP TABLE IF EXISTS outbox_messages;');
-    this.addSql('DROP TABLE IF EXISTS inbox_messages;');
-    this.addSql('DROP TABLE IF EXISTS wallet_ledger_entries;');
-    this.addSql('DROP FUNCTION IF EXISTS forbid_ledger_changes();');
-    this.addSql('DROP TABLE IF EXISTS wager_transactions;');
-    this.addSql('DROP TABLE IF EXISTS wallets;');
+    this.addSql('DROP TABLE IF EXISTS outbox_messages;')
+    this.addSql('DROP TABLE IF EXISTS inbox_messages;')
+    this.addSql('DROP TABLE IF EXISTS wallet_ledger_entries;')
+    this.addSql('DROP FUNCTION IF EXISTS forbid_ledger_changes();')
+    this.addSql('DROP TABLE IF EXISTS wager_transactions;')
+    this.addSql('DROP TABLE IF EXISTS wallets;')
   }
 }
