@@ -15,7 +15,6 @@ export default defineConfig({
   extensions: [Migrator],
   migrations: {
     migrationsList: [{ name: 'Migration001Init', class: Migration001Init },
-                     { name: 'Migration001Init', class: Migration001Init },
                      { name: 'Migration002BalanceObserved', class: Migration002BalanceObserved },
     ],
     transactional: true,
